@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 44px;
+}
+
+.header__logo{
+    margin-top: 5px;
+    margin-right: 500px;
+}
+
+.header__link{
+    margin-top: 11px;
+    margin-bottom: 12px;
+}
+
+.top__title{
+    margin-bottom:17px;
+}
+.top__text{
+    margin-bottom:37px;
+}
+
+.top__start__button{
+    font-family: Gilroy-Bold;
+    color:F25822;
+}
+
+.top__watch__button{
+    font-family: Gilroy-Bold;
+    color:AAAAAA;
+}
+
+.footer{
+    margin-top: 163;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
