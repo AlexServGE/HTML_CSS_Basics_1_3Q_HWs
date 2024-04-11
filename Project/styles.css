@@ -7,6 +7,18 @@ a {
     text-decoration: none;
 }
 
+.container { 
+    max-width: 1170px;
+    margin: 0 auto;
+}
+    
+.flex{ 
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+    
+
 .header {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -19,25 +31,51 @@ a {
 }
 
 .header__link{
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
     margin-top: 11px;
     margin-bottom: 12px;
 }
 
+.top__content {
+    margin-right: 39px;
+}
+
 .top__title{
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-weight: 400;
+    color: #000000;
     margin-bottom:17px;
 }
 .top__text{
-    margin-bottom:37px;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(136, 136, 136);
+    margin-bottom: 37px;
 }
 
-.top__start__button{
+.top__button {
     font-family: Gilroy-Bold;
-    color:F25822;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #F25822;
+    text-align:center;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.3s;    
 }
 
-.top__watch__button{
-    font-family: Gilroy-Bold;
-    color:AAAAAA;
+.top__button:hover {
+    color:#AAA;
+    background-color: #fff;
+    border: 2px solid #fff;
+   
 }
 
 .footer{
