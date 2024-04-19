@@ -8,7 +8,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 body{
@@ -16,47 +16,59 @@ body{
 }
 
 .container{
-    max-width: 1140px;
-    margin:0px auto;
+    max-width: 79.16vw; /*1140/1440*/
+    margin:0px auto; 
 }
 
 .flex{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header{
-    padding-top: 18px;
-    padding-bottom: 19px;
+    padding-top: 1.25vw; /*18px/1440*/
+    padding-bottom: 1.32vw; /*19px/1440*/
     background-color: rgb(34, 34, 34);
 }
 
 .header__left__image{
-    padding-right: 20px;
+    padding-right: 1.39vw; /*20px/1440*/
 }
 
 .header__right__image{
-    padding-top: 12px;
-    padding-left: 16.5px;
-    padding-right: 16.5px;
-    max-width: 32px;
-    max-height: 23px;
+    padding-top: 0.8vw; /*12/1440*/
+    padding-left: 1.14vw;  /*16.5/1440*/
+    padding-right: 1.14vw; /*16.5/1440*/
+    max-width: 2.2vw; /*32/1440*/
+    max-height: 1.6vw; /*23/1440*/
 }
 
 .top{
     background-color: rgb(241, 228, 230);
 }
 
+.top__image{
+    width: 50%;
+}
+
+.top__image img{
+    max-width: 39.58vw;
+}
+
 .top__text{
-    max-width: 799px;
-    margin:0px auto;
-    padding-left: 16px;
+    width: 50%; /*799px/1440*/
+    display: grid;
+}
+
+.top__text__box{
+    justify-self: center;
+    padding-left: 1.14vw; /*16/1440*/
     border-left: 12px solid rgb(241, 109, 127);
 }
 
 .top__title{
-    font-size: 49px;
+    font-size: 48px;
     font-weight: 900;
 }
 
@@ -67,45 +79,52 @@ body{
 
 
 .center{
-    padding-top: 65px;
+    padding-top: 4.5vw; /*65px/1440*/
     text-align: center;
 }
 
 .center__grid{
     display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 260px 180px;
-    gap: 30px;
+    grid-template-columns: repeat(3, 25vw); /*360/1440*/
+    gap: 2.08vw; /*30/1440 */
 }
 
 
 .for__women{
-    padding-top: 105px;
-    padding-bottom: 105px;
+    padding-top: 7.3vw; /*105/768 105/1440 */
+    padding-bottom: 7.3vw;
     background-image: url("./images/3_center_content/1.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .for__men{
-    padding-top: 105px;
-    padding-bottom: 105px;
+    padding-top: 7.3vw;
+    padding-bottom: 7.3vw;
     background-image: url("./images/3_center_content/2.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .for__kids{
-    padding-top: 105px;
-    padding-bottom: 105px;
+    padding-top: 7.3vw;
+    padding-bottom: 7.3vw;
     background-image: url("./images/3_center_content/3.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .for__accesories{
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 4.5vw;  /*65/1440*/
+    padding-bottom: 4.5vw;
     background-image: url("./images/3_center_content/4.jpeg");
+    background-position: center;
+    background-size: cover;
     grid-column: span 3;
 }
 
 .center__box__content{
-    font-size: 16px;
+    font-size: 16px; 
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
@@ -117,7 +136,7 @@ body{
 }
 
 .bottom{
-    padding-top: 96px;
+    padding-top: 6.67vw; /*96px/1440*/
 }
 
 .bottom__flex{
@@ -133,8 +152,8 @@ body{
 }
 
 .bottom__content{
-    padding-top: 6px;
-    padding-bottom: 48px;
+    padding-top: 0.42vw; /*6px/1440*/
+    padding-bottom: 3.33vw; /*48px/1440*/
     color: rgb(159, 159, 159);
     font-size: 14px;
     font-weight: 400;
@@ -142,28 +161,28 @@ body{
 
 .bottom__boxes{
     display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(2, 587px);
-    gap:30px 25px;
+    grid-template-columns: repeat(3, 25vw); /*360px/1440*/
+    grid-template-rows: repeat(2, 40.76vw); /*587px/1440*/
+    gap:2.08vw 1.74vw; /*30px/1440 25px/1440*/
 }
 
 .bottom__box__title{
-    padding-top: 25px;
-    padding-left: 16px;
+    padding-top: 1.74vw; /*25px/1440*/
+    padding-left: 1.11vw;  /*16px/1440*/
     font-size: 13px;
     font-weight: 400;
     color: rgb(0, 0, 0);
 }
 .bottom__box__content{
-    padding-top: 16px;
-    padding-left: 16px;
+    padding-top: 1.11vw; /*16px/1440*/
+    padding-left: 1.11vw; /*16px/1440*/
     font-size: 14px;
     font-weight: 300;
     color: rgb(93, 93, 93)
 }
 .bottom__box__price{
-    padding-top: 16px;
-    padding-bottom: 24px;
+    padding-top: 1.11vw; /*16px/1440*/
+    padding-bottom: 1.67vw; /*24px/1440*/
     padding-left: 16px;
     font-size: 16px;
     font-weight: 400;
@@ -173,20 +192,55 @@ body{
 
 
 .footer{
-    padding-top: 48px;
-    padding-bottom: 60px;
+    padding-top: 3.33vw; /*48/1440*/
+    padding-bottom: 4.17vw; /*60/1440*/
     display: flex;
 }
 
 .footer__link{
-    max-width: 212px;
+    max-width: 14.72vw; /*212px/1440*/
     justify-self: center;
-    margin:0px auto;
-    padding: 15px 39px 14px;
+    padding: 1.04vw 2.71vw 0.97vw; /*15px/1440 39px/1440 14px/1440*/
     font-size: 16px;
     font-weight: 400;
     color: rgb(242, 99, 118);
     border: 1px solid rgb(255, 106, 106);
+}
+
+@media (max-width: 769px){
+
+    .container{
+        max-width: 95.83vw; /*736/768*/
+        margin:0px auto; 
+    }
+
+    .top__image img{
+        max-height: 47.91vw; /*368px/768*/
+    }
+
+    .top__title{
+        font-size: 44px;
+    }
+    
+    .top__content{
+        font-size: 24px;
+    }
+
+    .center__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 30.21vw); /*232/768*/
+        gap: 2.47vw; /*19/768 */
+    }
+
+    .bottom__boxes{
+        display: grid;
+        grid-template-columns: repeat(2, 46.87vw); /*360px/768*/
+        grid-template-rows: repeat(3, 75.65vw); /*581px/768*/
+        gap:2.08vw; /*16px/768*/
+    }
+    
+   
+
 }
 
 
