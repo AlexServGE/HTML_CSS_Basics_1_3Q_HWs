@@ -32,11 +32,13 @@ body{
     background-color: rgb(34, 34, 34);
 }
 
-.header__left__image{
+.header__left__icons img{
     padding-right: 1.39vw; /*20px/1440*/
+    max-width: 2.2vw; /*32/1440*/
+    max-height: 1.6vw; /*23/1440*/
 }
 
-.header__right__image{
+.header__right__icons img{
     padding-top: 0.8vw; /*12/1440*/
     padding-left: 1.14vw;  /*16.5/1440*/
     padding-right: 1.14vw; /*16.5/1440*/
@@ -53,7 +55,7 @@ body{
 }
 
 .top__image img{
-    max-width: 39.58vw;
+    max-height: 63.66vh;
 }
 
 .top__text{
@@ -194,11 +196,14 @@ body{
 .footer{
     padding-top: 3.33vw; /*48/1440*/
     padding-bottom: 4.17vw; /*60/1440*/
-    display: flex;
+}
+
+.footer_grid{
+    display: grid;
+    grid-template-columns: 100%;
 }
 
 .footer__link{
-    max-width: 14.72vw; /*212px/1440*/
     justify-self: center;
     padding: 1.04vw 2.71vw 0.97vw; /*15px/1440 39px/1440 14px/1440*/
     font-size: 16px;
@@ -207,7 +212,7 @@ body{
     border: 1px solid rgb(255, 106, 106);
 }
 
-@media (max-width: 769px){
+@media (min-width: 321px) and (max-width: 768px){
 
     .container{
         max-width: 95.83vw; /*736/768*/
@@ -238,8 +243,76 @@ body{
         grid-template-rows: repeat(3, 75.65vw); /*581px/768*/
         gap:2.08vw; /*16px/768*/
     }
+
+}
+
+@media (max-width: 320px) { /*767*/
+
+    .container{
+        width: 95vw;
+        margin:0px auto; 
+    }
+
+    .header__right__icon_2{
+        display: none;
+    }
+
+    .header__right__icon_3{
+        display: none;
+    }
+
+    .top__image{
+        display: none;
+    }
+
+    .top__text{
+        width: 100%;
+        padding: 19.29vh 17.5vw;
+    }
+
+    .top__title{
+        font-size: 38px;
+        font-weight: 900;
+    }
     
-   
+    .top__content{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .center__grid{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 4.17vh; /*19/768 */
+    }
+
+    .for__accesories{
+        grid-column: span 1;
+    }
+
+    .bottom__boxes{
+        display: grid;
+        grid-template-columns: 100%; /*360px/768*/
+        grid-template-rows: repeat(6, 60.48vh); /*581px/768*/
+        gap:2.08vh; /*16px/768*/
+    }
+
+    .bottom__box__title{
+        padding-top: 3.16vh; 
+        padding-left: 5.60vw;  
+    }
+
+    .bottom__box__content{
+        padding-top: 1.64vh; /*16px/1440*/
+        padding-left: 5.60vw; /*16px/1440*/
+
+    }
+
+    .bottom__box__price{
+        padding-top: 2.34vh; /*16px/1440*/
+        padding-bottom: 2.6vh; /*24px/1440*/
+        padding-left: 5.60vw;
+    }
 
 }
 
